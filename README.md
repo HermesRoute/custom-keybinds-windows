@@ -31,7 +31,7 @@ CapsLock's native toggle behavior is disabled (`SetCapsLockState "AlwaysOff"`), 
 | Magic + `Right` / `RButton` | Move to virtual desktop on the right |
 | Magic + `f` | Toggle fullscreen |
 | Magic + `Backspace` | Close active window |
-| Magic + `c` | Insert comment block |
+| Magic + `3` | Insert comment block |
 | Magic + `=` | Insert tree branch (`├──`) |
 | Magic + `-` | Insert tree end (`└──`) |
 | Magic + `NumpadSub` | 🙂 |
@@ -61,7 +61,7 @@ CapsLock's native toggle behavior is disabled (`SetCapsLockState "AlwaysOff"`), 
 The script runs at the user level which means if any window is opened as admin, the script won't function on that window. This also introduces the possibility of the magic key breaking as if CapsLock is accidentally pressed while the admin window is active, then CapsLock can get stuck in the "on" state. Included in the project is runKeybindings_script.ahk.
 This is a helper script which only functions to re-run keybindings_script.ahk
 
-Set the path below to the absolute path of your keybindings_script.ahk, and this can also be set to run at startup using the same steps from the installation section above.
+Set the path below to the absolute path of your keybindings_script.ahk and to use it run "Right Control + Enter":
 
 ```
 RCtrl & Enter::run("<absolute path to keybindings_script.ahk>")
